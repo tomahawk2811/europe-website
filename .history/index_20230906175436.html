@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Remembering the most popular figures from Europe.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital@1&display=swap" rel="stylesheet">
+    <link href="/reportissue.html">
+    <style>
+        .inventor-info {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color:rgb(255, 0, 0)">
+        <h1>Welcome</h1>
+        <a href="mailto:sulibhanwolf88@gmail.com">Send an Email</a>
+        <hr>
+    </header>
+
+    <footer> 
+        <hr>
+        author: Sulibhan Wolf<br>
+        &copy; Copyright reserved<br>
+    </footer>
+
+    <h1>Remembering Europeans.</h1>
+    <hr>
+    <p>
+        This is a website for remembering some of the greatest Europeans such as inventors, writers, scientists, or musicians.
+    </p>
+    <hr>
+
+    <div class="box" id="box1">
+        <h2>Index</h2>
+        <hr>
+        <h1>Inventors</h1>
+        <hr>
+        <ul id="inventors-list">
+            <li><a href="#" onclick="showInventor('archimedes')">Archimedes (Greece)</a></li>
+            <li><a href="#" onclick="showInventor('blaisePascal')">Blaise Pascal (France)</a></li>
+            <!-- Add more inventor names with their respective onclick events -->
+        </ul>
+
+        <hr>
+        <h1>Scientists</h1>
+        <hr>
+        <ul id="scientists-list">
+            <li><a href="#" onclick="showInventor('andreAmpere')">Ampère, André-Marie (France)</a></li>
+            <li><a href="#" onclick="showInventor('charlesBabbage')">Babbage, Charles (United Kingdom)</a></li>
+            <!-- Add more scientist names with their respective onclick events -->
+        </ul>
+    </div>
+
+    <div id="inventors-info">
+        <!-- Inventor information will be displayed here -->
+        <div id="archimedes" class="inventor-info">
+            <h2>Archimedes (Greece)</h2>
+            <p>Known for his contributions to mathematics and inventions like the Archimedes Screw.</p>
+        </div>
+        <div id="blaisePascal" class="inventor-info">
+            <h2>Blaise Pascal (France)</h2>
+            <p>Inventor of the Pascaline, an early mechanical calculator.</p>
+        </div>
+        <!-- Add more inventor information divs for each inventor -->
+    </div>
+
+    <script>
+        function showInventor(inventorId) {
+            // Hide all inventor information divs
+            const inventorInfoDivs = document.querySelectorAll('.inventor-info');
+            inventorInfoDivs.forEach(div => {
+                div.style.display = 'none';
+            });
+
+            // Show the selected inventor's information
+            const selectedInventorInfo = document.getElementById(inventorId);
+            selectedInventorInfo.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
