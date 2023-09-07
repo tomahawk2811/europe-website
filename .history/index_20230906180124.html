@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Remembering the most popular figures from Europe.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital@1&display=swap" rel="stylesheet">
+    <link href="/reportissue.html">
+    <style>
+        .inventor-info {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color:rgb(255, 0, 0)">
+        <h1>Welcome</h1>
+        <a href="mailto:sulibhanwolf88@gmail.com">Send an Email</a>
+        <hr>
+    </header>
+
+    <footer> 
+        <hr>
+        author: Sulibhan Wolf<br>
+        &copy; Copyright reserved<br>
+    </footer>
+
+    <h1>Remembering Europeans.</h1>
+    <hr>
+    <p>
+        This is a website for remembering some of the greatest Europeans such as inventors, writers, scientists, or musicians.
+    </p>
+    <hr>
+
+    <div class="box" id="box1">
+        <h2>Index</h2>
+        <hr>
+        <h1>Inventors</h1>
+        <hr>
+        <ul>
+            <li><a href="inventors.html#archimedes">Archimedes</a></li>
+            <li><a href="inventors.html#blaisePascal">Blaise Pascal</a></li>
+            <!-- Add more inventor names with their respective anchor links -->
+        </ul>
+    </div>
+
+    <script>
+        function showInventor(inventorId) {
+            // Hide all inventor information divs
+            const inventorInfoDivs = document.querySelectorAll('.inventor-info');
+            inventorInfoDivs.forEach(div => {
+                div.style.display = 'none';
+            });
+
+            // Show the selected inventor's information
+            const selectedInventorInfo = document.getElementById(inventorId);
+            selectedInventorInfo.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

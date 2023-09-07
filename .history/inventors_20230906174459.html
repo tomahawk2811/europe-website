@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List of Inventors</title>
+    <style>
+        .inventor-info {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>List of Inventors</h1>
+    <ul id="inventors-list">
+        <li><a href="#" onclick="showInventor('archimedes')">Archimedes</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <li><a href="#" onclick="showInventor('thomasEdison')">Thomas Edison</a></li>
+        <!-- Add more inventors to the list with their respective onclick events -->
+    </ul>
+
+    <div id="inventors-info">
+        <!-- Inventor information will be displayed here -->
+        <div id="archimedes" class="inventor-info">
+            <h2>Archimedes</h2>
+            <p>Archimedes was a Greek mathematician and inventor...</p>
+        </div>
+        <div id="thomasEdison" class="inventor-info">
+            <h2>Thomas Edison</h2>
+            <p>Thomas Edison was an American inventor known for the light bulb...</p>
+        </div>
+        <!-- Add more inventor information divs for each inventor -->
+    </div>
+
+    <script>
+        function showInventor(inventorId) {
+            // Hide all inventor information divs
+            const inventorInfoDivs = document.querySelectorAll('.inventor-info');
+            inventorInfoDivs.forEach(div => {
+                div.style.display = 'none';
+            });
+
+            // Show the selected inventor's information
+            const selectedInventorInfo = document.getElementById(inventorId);
+            selectedInventorInfo.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
